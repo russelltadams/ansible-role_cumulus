@@ -133,11 +133,11 @@ For more information, See [Configuring Hardware-enabled DDOS Protection](https:/
 
 **NOTE:** Beware, removing port from `config.ports` will result in leaving the previous config behind.
 
-100G switches allow you to breakout ports to 4x10G, 4x25G, etc with use of a breakout cable (or use
-a different speed than 100G). For example, this will take `swp1` and make `swp1sN`, where N is 0 to
-4 or 2, depending on which breakout type configured.
+Switches using QSFP+ form-factor can carry four channels which allow you to breakout ports to 4x10G, 4x25G and, 2x50G, with use of a breakout cable (or use
+a different speed than 40G or 100G). For example, this will take `swp1` and make `swp1sN`, where N is 0 to
+1 or 3, depending on which breakout type configured.
 
-As of this writing, the options available to the Z9100 switch is:
+For example, as of this writing, the options available to the Dell Z9100-ON switch are:
 * 4x10G
 * 4x25G
 * 2x50G
